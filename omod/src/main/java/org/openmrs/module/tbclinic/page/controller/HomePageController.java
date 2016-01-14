@@ -28,7 +28,7 @@ public class HomePageController {
 
         public void get(PageModel model, UiUtils ui) {
             List<OpdPatientQueue> patientQueues = Context.getService(PatientQueueService.class).listOpdPatientQueue("", TB_CLINIC = 5118, "", 0, 0);
-            model.addAttribute("tbQueue", patientQueues);
+            model.addAttribute("patientQueues", patientQueues);
         }
     }
 
